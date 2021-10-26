@@ -1,0 +1,28 @@
+<div class="diario_form" style="text-align: center;">
+  <h3 style="color: white">Agregar descuento</h3>
+  <form action="/diario-job/descuento" method="POST" class="form-group">
+    <input type="text" name="description" placeholder="Description" />
+    <input type="number" name="precio" placeholder="precio" />
+    <input type="submit" />
+  </form>
+</div>
+<div class="container bg-light" style="color:white">
+  <div class="row p-4">
+    <div class="col p-3">
+      description
+    </div>
+    <div class="col p-3">
+        precio
+    </div>
+  </div>
+  {{#each descuento}}  
+  <div class="row descuento">
+    <div class="col p-3">
+        {{description}}
+    </div>
+    <div class="col p-3">
+        {{precio}}
+    </div>
+  </div>
+  {{/each}}
+</div>

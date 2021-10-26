@@ -1,0 +1,170 @@
+<div class="table-responsive">
+  <div class="table-wrapper">
+    <div class="table-title">
+      <div class="row">
+        <div class="col-sm-3">
+          <h2>Green <b>Apple</b></h2>
+        </div>
+        <div class="col-sm-3">
+          <form action="/jobs/empleados" method="GET" style="display: flex;">
+            <select style="color:white;" name="empleados">
+              <option style="color:black;"><a href="/jobs/empleados">Kevin</a> </option>
+              <option style="color:black;">Kendry</option>
+              <option style="color:black;">Bryan</option>
+              <option style="color:black;">Oscar </option>
+              <option style="color:black;" selected>yegor </option>
+            </select>
+            <input style="border: 0;background: #ffffff;color: #19933f;" type="submit" value="Consultar">
+          </form>
+        </div>
+        <div class="col-sm-3">
+          <a href="/jobs/new-job" class="btn btn-success">
+            Añadir Nuevo Trabajo
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="/jobs/new-job-fast" class="btn btn-success">
+            Añadir Nuevo Trabajo Rapido
+          </a>
+        </div>
+      </div>
+    </div>
+    <table class="table table-responsive  table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Terminado</th>
+          <th>Cliente</th>
+          <th>Modelo</th>
+          <th>Telefono</th>
+          <th>Precio</th>
+          <th>Descripcion</th>
+          <th>Urgencia</th>
+          <th>trabajador</th>
+          <th>Fecha</th>
+          <th>Entregado</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each jobs}}
+        <tr>
+          <td>
+            <div class="terminado">
+              <div>
+                <form class="formulario" action="/jobs/entregado/{{_id}}?_method=PUT" method="POST">
+                  <input type="hidden" name="_method" value="PUT" />
+                  <input type="hidden" name="bol" value="true">
+                  <button type="submit" class="btn btn_1">
+                    <a>
+                      <i class="fas fa-shipping-fast fa-2x"></i>
+                    </a>
+                  </button>
+                </form>
+              </div>
+              <div>
+                <form class="formulario" action="/jobs/edita/{{_id}}?_method=PUT" method="POST">
+                  <input type="hidden" name="_method" value="PUT" />
+                  <input type="hidden" name="bol" value='true' />
+                  <button type="submit" class="btn btn_1">
+                    <a>
+                      <i style="color:#5ec732;" class="fas fa-smile-beam fa-2x"></i>
+                    </a>
+                  </button>
+                </form>
+              </div>
+              <div>
+                <form class="formulario" action="/jobs/delete/{{_id}}?_method=DElETE" method="POST">
+                  <input type="hidden" name="_method" value="DElETE" />
+                  <button type="submit" class="btn btn_1">
+                    <a>
+                      <i style="color:#b30600;" class="fas fa-sad-cry fa-2x"></i>
+                    </a>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </td>
+          <td class="jobtd">
+            <div>
+              {{name}}
+            </div>
+          </td>
+          <td>{{modelo}}</td>
+          <td>{{telf}}</td>
+          <td>{{precio}}</td>
+          <td>{{description}}</td>
+          <td>{{urgencia}}</td>
+          <td>{{trabajador}}</td>
+          <td class="date">{{date}}</td>
+          <td class="check_row">{{entregado}}</td>
+          <script>
+            var all = document.getElementsByClassName("check_row");
+            for (var i = 0; i < all.length; i++) {
+              if (all[i].textContent == "true") {
+                all[i].parentNode.style.background = "rgb(92 95 93 / 77%)"
+                all[i].parentNode.style.color = "white"
+              } else {
+                all[i].parentNode.style.background = "white"
+                all[i].parentNode.style.color = "black"
+              }
+            }
+            var dates = document.getElementsByClassName("date");
+            for (var i = 0; i < dates.length; i++) {
+              var subDate = dates[i].innerText.substring(0, 25)
+              dates[i].innerHTML = subDate
+            }
+          </script>
+          <td>
+            <a href="/jobs/descuento/{{_id}}" class="edit" title="Edit" data-toggle="tooltip">Descuento</a>
+            <a href="/jobs/edit-job/{{_id}}" class="edit" title="Edit" data-toggle="tooltip"><i
+                class="far fa-edit"></i></a>
+          </td>
+        </tr>
+        {{else}}
+        <div class="row rw">
+          <div class="col">Agrega un titulo</div>
+          <div class="col">lorem</div>
+          <div class="col">
+            <a><i class="fas fa-edit"></i></a>
+            <a><i class="fas fa-trash"></i></a>
+          </div>
+        </div>
+        {{/each}}
+      </tbody>
+    </table>
+
+    <div class="clearfix">
+      <ul class="pagination">
+        <li>
+          <a class="dropdown-item" href="/jobs/filter">Filtrar Jobs</a>
+        </li>
+        <li>
+          <div class="total">
+            <form action="/total" method="GET">
+              <button type="submit" class="btn-total">
+                <a class="a-total">Total</a>
+              </button>
+          </div>
+          </form>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="/jobs/all-jobs-check">trabajo Terminado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/jobs/pago-diario/">Pagos Diarios</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/jobs/mes-job">Mes articulo</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/jobs/diario-job">Total Diario</a>
+        </li> 
+        <form action="enviar-mensaje" method="POST">
+          <input type="submit" value="Cerrar Mensajes">
+        </form>
+  
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="diario_form" style="text-align: center;">
+  <h3 style="color: white">Agregar pago diario</h3>
+  <form action="/pago-diario" method="POST" class="form-group">
+    <div>
+      <select style="width:auto;color:white;" name="trabajador">
+        <option style="color:black;">Kevin </option>
+        <option style="color:black;">Ken</option>
+        <option style="color:black;">Bryan</option>
+        <option style="color:black;">Oscar </option>
+        <option style="color:black;" selected>Yegor </option>
+
+      </select>
+      <input type="text" name="description" placeholder="Description" />
+      <input type="number" name="precio" placeholder="precio" />
+      <input type="submit" />
+    </div>
+
+  </form>
+</div>
+<div class="container bg-light" style="color:white">
+  <div class="row p-4">
+    <div class="col p-3">
+      Trabajador
+    </div>
+    <div class="col p-3">
+      description
+    </div>
+    <div class="col p-3">
+      precio
+    </div>
+    <div class="col p-3">
+      dates
+    </div>
+  </div>
+
+  {{#each pagoDiario}}
+    <div class="row descuento">
+      <div class="col p-3">
+        {{trabajador}}
+      </div>
+      <div class="col p-3">
+        {{description}}
+      </div>
+      <div class="col p-3">
+        {{precio}}
+      </div>
+      <div class="col p-3">
+        {{date}}
+      </div>
+    </div>
+  {{/each}}
+</div>

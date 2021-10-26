@@ -1,0 +1,31 @@
+<div class="container_resumen">
+  <div class="div_container_resumen">
+    <form action="/jobs/mes-job" method="POST">
+      <div class="mb-3">
+        <input class="form-control" list="meses" name="mes" id="browser" placeholder="Mes">
+            <datalist id="meses">
+              <option value="Enero">
+              <option value="Febrero">
+              <option value="Marzo">
+              <option value="Abril">
+              <option value="Mayo">
+              <option value="Junio">
+              <option value="Julio">
+              <option value="Agosto">
+              <option value="Sptiembre">
+              <option value="Octubre">
+              <option value="Noviembre">
+              <option value="Diciembre">
+            </datalist>
+      </div>
+      <div class="mesSubmit">
+        <input type="submit" />
+      </div>
+    </form>
+  </div>
+  <div style="color: aliceblue; font-size: 2rem;" class="div_container_resumen">
+ 
+      <b>El trabajo mensual resulto : {{mensual}}</b>
+
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<nav
+  id="navbar"
+  class="navbar fixed-top navbar-expand-lg navbar-light bg-light"
+>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarText"
+    aria-controls="navbarText"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav m-auto">
+      <li class="nav-item">
+        <a class="nav-link home" href="/">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#descripcion">Descripcion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#galeria">Galeria</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#facilidades">Problemas Comunes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#mensaje">Servicios</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </li>
+      {{#if user}}
+        <li class="nav-item">
+          <a class="nav-link" href="/notes">Notas</a>
+        </li>
+        <li class="nav-item">
+          <a href="/notes/add" class="nav-link"><i
+              class="fas fa-plus-square"
+            ></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/jobs/all-job">Trabajos</a>
+        </li>
+        <li class="nav-item">
+          <a href="/jobs/new-job" class="nav-link"><i
+              class="fas fa-plus-square"
+            ></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user/logout">Cerrar</a>
+        </li>
+      {{else}}
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href=""
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          ><i class="fas fa-user-shield"></i></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/user/singin">singin</a>
+          </div>
+        </li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>

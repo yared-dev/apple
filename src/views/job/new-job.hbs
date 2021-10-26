@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="row row_rw job">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <h3>Nuevo Trabajo</h3>
+        </div>
+        <div class="card-body">
+          <form action="/jobs/add-new-job" method="post" class="form-control">
+            <div class="mb-3">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Nombre Cliente"
+                autofocus
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                name="dni"
+                class="form-control"
+                placeholder="DNI ó R.U.C"
+                autofocus
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                name="modelo"
+                class="form-control"
+                placeholder="Modelo"
+                autofocus
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                name="telf"
+                class="form-control"
+                placeholder="telf"
+                autofocus
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                name="description"
+                class="form-control"
+                placeholder="Description"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                name="precio"
+                class="form-control"
+                placeholder="precio"
+              />
+            </div>
+            <div class="">
+              <div class="mb-3">
+                <select name="trabajador" id="contacts">
+                  <option value="bryan">bryan</option>
+                  <option value="yegor">yegor</option>
+                  <option value="kevin">kevin</option>
+                </select>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-3">
+                <select name="prioridad" id="cars">
+                  <option value="alta">Alta</option>
+                  <option value="media">Media</option>
+                  <option value="baja">Baja</option>
+                </select>
+              </div>
+            </div>
+            <div class="ms-1">
+              <button class="save btn btn-primary btn-lg" type="submit">
+                Añadir
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

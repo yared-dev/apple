@@ -1,0 +1,26 @@
+<div class="filter">
+  <form action="/jobs/filter" method="POST" id="form" class="topBefore">
+
+    <input id="name" name="name" type="text" placeholder="NAME" />
+    <input id="dni" name="dni" type="text" placeholder="DNI" />
+    <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+    <input id="submit" type="submit" value="GO!" />
+
+  </form>
+  {{#each trabajos}}
+    <div class="filter_div">
+      <h2>{{name}} </h2>
+      <h2> {{dni}} </h2>
+      <h2> {{precio}} </h2>
+      <h2> {{description}}</h2>
+      <h2> {{date}}</h2>
+      <h2> {{modelo}}</h2>
+      <h2> {{telefono}}</h2>
+
+    </div>
+  {{else}}
+    <div class="filter_div">
+      <h1>NO HAY DATOS</h1>
+    </div>
+  {{/each}}
+</div>

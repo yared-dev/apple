@@ -1,0 +1,72 @@
+<div class="table-responsive">
+  <div class="table-wrapper">
+    <div class="table-title">
+      <div class="row">
+        <div class="col-sm-5">
+          <h2>Green <b>Apple</b></h2>
+        </div>
+      </div>
+    </div>
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Producto</th>
+          <th>Descripcion</th>
+          <th>Action</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {{#each notes}}
+
+          <tr>
+            <td>--</td>
+            <td>{{title}}</td>
+            <td>{{description}}</td>
+            <td>
+              <form
+                class="formulario"
+                action="/notes/delete/{{_id}}?_method=DELETE"
+                method="POST"
+              >
+                <a
+                  href="/notes/edit/{{_id}}"
+                  class="edit"
+                  title="Edit"
+                  data-toggle="tooltip"
+                ><i class="far fa-edit"></i>
+                <input type="hidden" name="_method" value="DELETE" />
+                <button type="submit" class="btn btn_1">
+                  <a href="" class="delete">
+                    <i class="fas fa-trash"></i>
+                  </a>
+                </button>
+              </form>
+            </td>
+            <td>
+              <a href="/notes/productos/all-articulo/{{_id}}">Arituclos</a>
+            </td>
+          </tr>
+        {{else}}
+          <div class="row rw">
+            <div class="col">Agrega un titulo</div>
+            <div class="col">lorem</div>
+            <div class="col">
+              <a><i class="fas fa-pen"></i></a>
+              <a><i class="far fa-trash-alt"></i></a>
+            </div>
+          </div>
+        {{/each}}
+      </tbody>
+    </table>
+      <div class="clearfix">
+      <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+      <ul class="pagination">
+        <li class="page-item active"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+      </ul>
+      </div>
+  </div>
+</div>

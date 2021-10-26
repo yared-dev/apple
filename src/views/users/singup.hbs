@@ -1,0 +1,56 @@
+<div class="row row_rw up">
+  <div class="row row_rw">
+    <div class="col col-up">
+      <div class="card text-center up-registrar">
+        <div class="card-header">
+          REGISTRATE
+        </div>
+    <img src="/img/manzana.jpg" class="rounded-circle mx-auto d-block logo m-4" alt="logo"></img>
+
+    <div class="card-body">
+      <form 
+      action="/user/singup"
+      method="POST"
+      class="row-1">
+
+      <div class="col-auto m-2">
+          <input type="email"
+          class="form-control" id="exampleFormControlInput1"
+          name="email"
+          placeholder="name@example.com"
+          value={{email}}>
+      </div>
+
+        <div class="col-auto m-2">
+          <input 
+          class="form-control"
+          type="text"
+          placeholder="name"
+          name="name"
+          aria-label=".form-control-lg example"
+          value={{name}}>
+        </div>      
+        
+        <div class="col-auto m-2">
+          <input type="password"
+          class="form-control"
+          name="password"
+          placeholder="Password"
+          value="{{password}}">
+        </div>
+        <div class="col-auto m-2">
+            <input type="password"
+          class="form-control"
+          id="inputPassword2"
+          name="confirmpassword"
+          placeholder="Confirm-Password"
+          value="{{confirmpassword}}">
+        </div>
+        <div class="col-auto m-2">
+        <button type="submit" class="btn btn-primary mb-3 btn-up">Sing Up</button>
+        </div>
+      </form>      
+    </div>
+  </div>
+  </div>
+</div>

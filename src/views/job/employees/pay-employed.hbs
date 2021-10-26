@@ -1,0 +1,120 @@
+<div class="container_resumen">
+  <div>
+    <h1> {{{empleados}}}</h1>
+    <div>
+      <div style="width: 100%;">
+
+        <form action="/jobs/edit/empleados" method="post">
+          <button
+            class="btn-up"
+            type="submit"
+            name="empleados"
+            value={{empleados}}
+          >RENOVAR PAGO MENSUAL</button>
+        </form>
+        <h1>Pago Mensual : {{pagoMensual}}</h1>
+        <table class="table table-responsive table-striped table-hover">
+          <thead style="background: #19b274;">
+            <tr>
+              <th>Trabajador</th>
+              <th>Precio</th>
+              <th>Descripcion</th>
+              <th>Date</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            {{#each pagosDiariosMensuales}}
+              <tr>
+                <td>{{trabajador}}</td>
+                <td>{{precio}}</td>
+                <td>{{description}}</td>
+                <td class="date">{{date}}</td>
+              </tr>
+              <script>
+                var dates = document.getElementsByClassName("date"); for(var i=
+                0; i < dates.length; i++) { var subDate =
+                dates[i].innerText.substring(0, 25); dates[i].innerHTML= subDate
+                ; }
+              </script>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h1> {{{empleados}}}</h1>
+    <div>
+      <div style="width: 100%;">
+        <h1>Trabajos Mensuales : {{mensual_trabajo}}</h1>
+        <table class="table table-striped table-hover">
+          <thead style="background: #19b274;">
+            <tr>
+              <th>Cliente</th>
+              <th>Modelo</th>
+              <th>Telefono</th>
+              <th>Precio</th>
+              <th>Descripcion</th>
+              <th>trabajador</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each trabajaTotalMensual}}
+              <tr>
+                <td>
+                  <div>
+                    <a href="#">{{name}}</a>
+                  </div>
+                </td>
+                <td>{{modelo}}</td>
+                <td>{{telf}}</td>
+                <td>{{precio}}</td>
+                <td>{{description}}</td>
+                <td>{{trabajador}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  {{!-- <div>
+    <h1> {{{empleados}}}</h1>
+    <div>
+      <div style="width: 100%;">
+        <h3 style="color: antiquewhite; text-align: center;">Pagos Diarios
+          Mensuales</h3>
+        <h1>Pago Mensual : {{pagoMensual}}</h1>
+        <table class="table table-responsive table-striped table-hover">
+          <thead style="background: #19b274;">
+            <tr>
+              <th>Trabajador</th>
+              <th>Precio</th>
+              <th>Descripcion</th>
+              <th>Date</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            {{#each pagosDiariosMensuales}}
+              <tr>
+                <td>{{trabajador}}</td>
+                <td>{{precio}}</td>
+                <td>{{description}}</td>
+                <td class="date">{{date}}</td>
+              </tr>
+              <script>
+                var dates = document.getElementsByClassName("date"); for(var i=
+                0; i < dates.length; i++) { var subDate =
+                dates[i].innerText.substring(0, 25); dates[i].innerHTML= subDate
+                ; }
+              </script>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div> --}}
+
+</div>
