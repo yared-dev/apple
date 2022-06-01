@@ -1,0 +1,6 @@
+{"_id":{"$oid":"6179897ff3feb327aea6396d"},"pagoMensual":-3243,"trabajador":"yegor","user":"617986603a390d84082009aa","pagoDefaultMensual":900.0}
+{"_id":{"$oid":"61798988f3feb327aea6396e"},"pagoMensual":-570,"trabajador":"kevin","user":"617986603a390d84082009aa","pagoDefaultMensual":900.0}
+{"_id":{"$oid":"61798996f3feb327aea6396f"},"pagoMensual":-830,"trabajador":"bryan","user":"617986603a390d84082009aa","pagoDefaultMensual":900.0}
+{"_id":{"$oid":"617989a3f3feb327aea63970"},"pagoMensual":-1630,"trabajador":"kendry","user":"617986603a390d84082009aa","pagoDefaultMensual":700.0}
+{"_id":{"$oid":"617989adf3feb327aea63971"},"pagoMensual":-2155,"trabajador":"oscar","user":"617986603a390d84082009aa","pagoDefaultMensual":700.0}
+{"_id":{"$oid":"6186c2d13230c89dbe6a8ecc"},"pagoMensual":900.0,"trabajador":"kendry","user":"617986603a390d84082009aa","pagoDefaultMensual":900.0}

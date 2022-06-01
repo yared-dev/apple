@@ -269,10 +269,7 @@ const activar = async (id) => {
   }
 };
 const senToClient = async (phoneOrContact, message) => {
-  if (!browser.isConnected()) {
-    await start();
-    console.log("null");
-  }
+  
   console.log("enter a sentoTOclient");
 
   let phone = phoneOrContact;
@@ -350,7 +347,7 @@ const isJobHour = () => {
     return false;
   }
 };
-enviar();
+//enviar();
 async function end() {
   try {
     await browser.close();

@@ -16,8 +16,8 @@ router.post("/send-email", async (req, res) => {
     host: "smtp.gmail.com",
     port: 465,
     auth: {
-      user: "gapplecol@gmail.com",
-      pass: "olMhwN#b0Ezg",
+      user: "rodriguezloayzabill@gmail.com",
+      pass: "loayza5429-",
     },
   });
   let mailOptions = await transporter.sendMail({

@@ -9,7 +9,7 @@ helper.isAuth = (req, res, next) => {
   }
 };
 helper.admin = (req, res, next) => {
-  if (req.user.email == "yaredper@gmail.com") {
+  if (req.user.email == "yegor@work.com") {
     return next();
   } else {
     res.redirect("/user/singin");

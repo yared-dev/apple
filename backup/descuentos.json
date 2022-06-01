@@ -1,0 +1,6 @@
+{"_id":{"$oid":"6282efd75e5176b18742b475"},"description":"kevin repuesto","precio":80,"date":{"$date":"2022-05-17T00:44:07.557Z"},"tID":"6282ed595e5176b18742b472","__v":0}
+{"_id":{"$oid":"628439ad5e5176b18742b47e"},"description":"Adelanto","precio":50,"date":{"$date":"2022-05-18T00:11:25.237Z"},"tID":"6282ec695e5176b18742b470","__v":0}
+{"_id":{"$oid":"628439b55e5176b18742b47f"},"description":"","precio":null,"date":{"$date":"2022-05-18T00:11:33.875Z"},"tID":"6282ec695e5176b18742b470","__v":0}
+{"_id":{"$oid":"628449bb5e5176b18742b480"},"description":"repuesto ","precio":105,"date":{"$date":"2022-05-18T01:19:55.406Z"},"tID":"6284278f5e5176b18742b47a","__v":0}
+{"_id":{"$oid":"628449f05e5176b18742b481"},"description":"repuesto(compra de pantall)","precio":75,"date":{"$date":"2022-05-18T01:20:48.056Z"},"tID":"6282ef555e5176b18742b474","__v":0}
+{"_id":{"$oid":"629044b7ca7cbc11ba67f64e"},"description":"repuestos ","precio":100,"date":{"$date":"2022-05-27T03:25:43.801Z"},"tID":"628942b4ca7cbc11ba67f647","__v":0}

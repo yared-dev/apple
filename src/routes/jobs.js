@@ -1,3 +1,4 @@
+
 const express = require("express");
 const router = express.Router();
 const { isAuth } = require("../helpers/auth");
@@ -6,7 +7,7 @@ const Job = require("../models/Job");
 const Payday = require("../models/Payday");
 const Desc = require("../models/Desc");
 const { activar, senToClient, end } = require("../config.js");
-const Empleado = require("../models/Empleados");
+const Empleado = require("../models/empleados");
 
 // acrodarse de moficiar la fecha
 // acrodarse de moficiar la fecha
@@ -268,27 +269,38 @@ router.post("/jobs/mes-job", isAuth, async (req, res) => {
 router.get("/jobs/mes-job", isAuth, (req, res) => {
   res.render("job/mes-trabajo.hbs", { mensual });
 });
+
+
 router.get("/jobs/diario-job", isAuth, async (req, res) => {
+
   let totalDiario = 0;
   const fecha = new Date(Date.now());
   let dia = fecha.getDate();
   let mes = fecha.getMonth();
   let day = dia + 1;
   let year = fecha.getUTCFullYear();
+  let newYear=year;
+  mes++
+  let month = mes ;
+
+
+
 
   if (dia <= 9) {
     dia = "0" + dia;
   }
-  if (mes <= 9) {
-    mes++;
-    mes = "0" + mes;
+   if (month === 13) {
+    month = "0" + 1;
+    newYear = year + 1;
   }
+
+
   const total = await Job.aggregate([
     {
       $match: {
         date: {
           $gte: new Date(`${mes}/${dia}/${year}`),
-          $lt: new Date(`${mes}/${day}/${year}`),
+          $lt: new Date(`${month}/${day}/${newYear}`),
         },
         estado: "true",
       },
@@ -300,7 +312,7 @@ router.get("/jobs/diario-job", isAuth, async (req, res) => {
       $match: {
         date: {
           $gte: new Date(`${mes}/${dia}/${year}`),
-          $lt: new Date(`${mes}/${day}/${year}`),
+          $lt: new Date(`${month}/${day}/${newYear}`),
         },
       },
     },
@@ -309,14 +321,14 @@ router.get("/jobs/diario-job", isAuth, async (req, res) => {
   const trabjoDiario = await Job.find({
     date: {
       $gte: new Date(`${mes}/${dia}/${year}`),
-      $lt: new Date(`${mes}/${day}/${year}`),
+      $lt: new Date(`${month}/${day}/${newYear}`),
     },
     estado: "true",
   });
   const pagoDiario = await Payday.find({
     date: {
       $gte: new Date(`${mes}/${dia}/${year}`),
-      $lt: new Date(`${mes}/${day}/${year}`),
+      $lt: new Date(`${month}/${day}/${newYear}`),
     },
   });
   if (total.length > 0) {
@@ -338,6 +350,40 @@ router.get("/jobs/diario-job", isAuth, async (req, res) => {
     });
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 router.put("/jobs/edita/:id", isAuth, async (req, res) => {
   const { bol } = req.body;
   await Job.findByIdAndUpdate(req.params.id, { estado: bol, date: Date.now() });
@@ -402,14 +448,18 @@ router.post("/diario-job/descuento", async (req, res) => {
 router.get("/jobs/pago-diario/", isAuth, admin, async (req, res) => {
   const fecha = new Date(Date.now());
   let mes = fecha.getMonth();
-  let mon = mes + 2;
+  let mon = mes + 1;
   let year = fecha.getUTCFullYear();
-
+  let newYear=year
+  if(mon===13){
+    mon="0"+1
+    newYear++
+  }
   mes++;
   const pagoDiario = await Payday.find({
     date: {
       $gte: new Date(`${mes}/01/${year}`),
-      $lt: new Date(`${mon}/01/${year}`),
+      $lt: new Date(`${mon}/01/${newYear}`),
     },
   }).sort({ date: "desc" });
 
@@ -422,6 +472,7 @@ router.post("/pago-diario", async (req, res) => {
   trabajador = trabajador.toLowerCase();
 
   const empleado = await Empleado.find({ trabajador: trabajador });
+
   const id = empleado[0]._id;
   const newPago = empleado[0].pagoMensual - precio;
 
@@ -438,31 +489,46 @@ router.post("/pago-diario", async (req, res) => {
   await newPay.save();
   res.redirect("/jobs/pago-diario/");
 });
+
+
+
+
+
+
+
 router.get("/jobs/empleados", isAuth, async (req, res) => {
   const fecha = new Date(Date.now());
   let mes = fecha.getMonth();
   let mensual_trabajo = 0;
   let year = fecha.getUTCFullYear();
-
+  let newYear = year;
   mes++;
-  let month = mes + 1;
-  if (mes <= 9) {
-    mes = "0" + mes;
+  let month = mes + 1
+  if (mes < 0) {
+    mes = 12 + mes;
+    year--
+  }
+  if (month === 13) {
+    month = "0" + 1;
+    newYear = year + 1;
   }
   const { empleados } = req.query;
+
   const employe = empleados.toLocaleLowerCase();
+
   const pagosDiariosMensuales = await Payday.find({
     date: {
       $gte: new Date(`${mes}/01/${year}`),
-      $lt: new Date(`${month}/01/${year}`),
+      $lt: new Date(`${month}/01/${newYear}`),
     },
     trabajador: `${employe}`,
   });
+
   const trabajaTotalMensual = await Job.find({
     trabajador: employe,
     date: {
       $gte: new Date(`${mes}/01/${year}`),
-      $lt: new Date(`${month}/01/${year}`),
+      $lt: new Date(`${month}/01/${newYear}`),
     },
   });
   let total_job_pay_month = await Job.aggregate([
@@ -471,17 +537,20 @@ router.get("/jobs/empleados", isAuth, async (req, res) => {
         trabajador: `${employe}`,
         date: {
           $gte: new Date(`${mes}/01/${year}`),
-          $lt: new Date(`${month}/01/${year}`),
+          $lt: new Date(`${month}/01/${newYear}`),
         },
       },
     },
     { $group: { _id: null, suma: { $sum: "$precio" } } },
   ]);
+
   if (total_job_pay_month.length) {
     mensual_trabajo = total_job_pay_month[0].suma;
   }
   const empleado = await Empleado.find({ trabajador: `${employe}` });
+
   const { pagoMensual } = empleado[0];
+
   res.render("job/employees/pay-employed.hbs", {
     empleados,
     pagosDiariosMensuales,
@@ -490,6 +559,49 @@ router.get("/jobs/empleados", isAuth, async (req, res) => {
     mensual_trabajo,
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //renovar pago
 router.post("/jobs/edit/empleados", async (req, res) => {

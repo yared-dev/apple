@@ -1,0 +1,3 @@
+{"_id":{"$oid":"617986603a390d84082009aa"},"name":"yegor","email":"yegor@apple.com","password":"$2a$10$E31rNH80bvU3uAMWvnEmKOWdmPyAILFG/IQHlysxrHT8M/7drXJ6C","date":{"$date":"2021-10-27T17:03:28.853Z"},"__v":0}
+{"_id":{"$oid":"61798dbc3a390d84082009ab"},"name":"apple","email":"apple@gmail.com","password":"$2a$10$lDKYmt0Dc/zOQxiwPWwW8.IDEp5lM8twEeXmURHvyxON2rdxyIc7S","date":{"$date":"2021-10-27T17:34:52.758Z"},"__v":0}
+{"_id":{"$oid":"617c923fe73896917f70e415"},"name":"Yegorae","email":"yegor@work.com","password":"$2a$10$2SSGNTWindT1DD9zx6O8FOI7t2ac38tqaCmMhykG/ev6f4OZ2FQ3q","date":{"$date":"2021-10-30T00:30:55.5Z"},"__v":0}

@@ -1,0 +1,70 @@
+{"_id":{"$oid":"6186c321b87f9498455e7e39"},"description":"adelanto","trabajador":"kendry","precio":500,"date":{"$date":"2021-11-06T18:02:09.019Z"},"__v":0}
+{"_id":{"$oid":"61a049084e270ee09b996929"},"description":"adelanto oscar","trabajador":"oscar","precio":250,"date":{"$date":"2021-11-26T02:40:08.5Z"},"__v":0}
+{"_id":{"$oid":"61a049194e270ee09b99692a"},"description":"adelanto brian","trabajador":"bryan","precio":200,"date":{"$date":"2021-11-26T02:40:25.878Z"},"__v":0}
+{"_id":{"$oid":"61a049274e270ee09b99692b"},"description":"adelanto kevin","trabajador":"kevin","precio":200,"date":{"$date":"2021-11-26T02:40:39.06Z"},"__v":0}
+{"_id":{"$oid":"61af8670277072b9f7c6ba00"},"description":"adelanto bici y dinero entregado ","trabajador":"oscar","precio":1050,"date":{"$date":"2021-12-07T16:06:08.756Z"},"__v":0}
+{"_id":{"$oid":"61af8dab277072b9f7c6ba01"},"description":"completando diner mal sumado ","trabajador":"oscar","precio":120,"date":{"$date":"2021-12-07T16:36:59.148Z"},"__v":0}
+{"_id":{"$oid":"61b3f1501c26ba15b16f76a4"},"description":"sueldo","trabajador":"kendry","precio":1500,"date":{"$date":"2021-12-11T00:31:12.324Z"},"__v":0}
+{"_id":{"$oid":"61b3fe2d1c26ba15b16f76a6"},"description":"tactil tablet sansung","trabajador":"yegor","precio":45,"date":{"$date":"2021-12-11T01:26:05.125Z"},"__v":0}
+{"_id":{"$oid":"61b3fe5f1c26ba15b16f76a7"},"description":"rapi","trabajador":"yegor","precio":40,"date":{"$date":"2021-12-11T01:26:55.249Z"},"__v":0}
+{"_id":{"$oid":"61b500df1c26ba15b16f76a8"},"description":"adelanto","trabajador":"bryan","precio":400,"date":{"$date":"2021-12-11T19:49:51.443Z"},"__v":0}
+{"_id":{"$oid":"61b501a41c26ba15b16f76a9"},"description":"preste dinero junto Kevin y Brian hace 2 semanas no se había anotado","trabajador":"oscar","precio":200,"date":{"$date":"2021-12-11T19:53:08.696Z"},"__v":0}
+{"_id":{"$oid":"61b501b71c26ba15b16f76aa"},"description":"preste dinero junto Kevin y Brian hace 2 semanas no se había anotado","trabajador":"bryan","precio":200,"date":{"$date":"2021-12-11T19:53:27.859Z"},"__v":0}
+{"_id":{"$oid":"61b501ca1c26ba15b16f76ab"},"description":"preste dinero junto a Kevin y Oscar y Brian","trabajador":"kevin","precio":200,"date":{"$date":"2021-12-11T19:53:46.995Z"},"__v":0}
+{"_id":{"$oid":"61b502701c26ba15b16f76ac"},"description":"completando mes de abril","trabajador":"bryan","precio":530,"date":{"$date":"2021-12-11T19:56:32.429Z"},"__v":0}
+{"_id":{"$oid":"61b502831c26ba15b16f76ad"},"description":"completando mes de abril ","trabajador":"oscar","precio":330,"date":{"$date":"2021-12-11T19:56:51.188Z"},"__v":0}
+{"_id":{"$oid":"61b502901c26ba15b16f76ae"},"description":"completando mes abril","trabajador":"kendry","precio":330,"date":{"$date":"2021-12-11T19:57:04.021Z"},"__v":0}
+{"_id":{"$oid":"61b5029e1c26ba15b16f76af"},"description":"completando mes de abril ","trabajador":"kevin","precio":530,"date":{"$date":"2021-12-11T19:57:18.97Z"},"__v":0}
+{"_id":{"$oid":"61c09cc81c26ba15b16f76b3"},"description":"adelanto un MES","trabajador":"kevin","precio":500,"date":{"$date":"2021-12-20T15:10:00.844Z"},"__v":0}
+{"_id":{"$oid":"61c09e1a0ff6dfce98c4d790"},"description":"adelanto","trabajador":"oscar","precio":55,"date":{"$date":"2021-12-20T15:15:38.427Z"},"__v":0}
+{"_id":{"$oid":"61c139f30ff6dfce98c4d791"},"description":"adelanto","trabajador":"kevin","precio":30,"date":{"$date":"2021-12-21T02:20:35.607Z"},"__v":0}
+{"_id":{"$oid":"61c13a090ff6dfce98c4d792"},"description":"adelanto peluquero","trabajador":"oscar","precio":20,"date":{"$date":"2021-12-21T02:20:57.785Z"},"__v":0}
+{"_id":{"$oid":"61c385670ff6dfce98c4d793"},"description":"pastilla","trabajador":"kevin","precio":10,"date":{"$date":"2021-12-22T20:07:03.749Z"},"__v":0}
+{"_id":{"$oid":"61c477e00ff6dfce98c4d794"},"description":"adelanto hace dos dias ","trabajador":"oscar","precio":150,"date":{"$date":"2021-12-23T13:21:36.735Z"},"__v":0}
+{"_id":{"$oid":"61cb12070ff6dfce98c4d795"},"description":"adelanto navideño","trabajador":"oscar","precio":150,"date":{"$date":"2021-12-28T13:32:55.984Z"},"__v":0}
+{"_id":{"$oid":"61dae6a1b1332f7e3cddd83b"},"description":"ADELNTO KEVIN MES ","trabajador":"yegor","precio":500,"date":{"$date":"2022-01-09T13:44:01.117Z"},"__v":0}
+{"_id":{"$oid":"61dae6aeb1332f7e3cddd83c"},"description":"ADELANTO DOS JUNTOS ","trabajador":"oscar","precio":300,"date":{"$date":"2022-01-09T13:44:14.303Z"},"__v":0}
+{"_id":{"$oid":"61df6373c69ab64f0147a19c"},"description":"adelanto kevin ","trabajador":"yegor","precio":500,"date":{"$date":"2022-01-12T23:25:39.162Z"},"__v":0}
+{"_id":{"$oid":"61df63aac69ab64f0147a19d"},"description":"adelanto ken","trabajador":"yegor","precio":500,"date":{"$date":"2022-01-12T23:26:34.713Z"},"__v":0}
+{"_id":{"$oid":"61df6afec69ab64f0147a19f"},"description":"pantalla","trabajador":"yegor","precio":80,"date":{"$date":"2022-01-12T23:57:50.562Z"},"__v":0}
+{"_id":{"$oid":"61e22125c69ab64f0147a1a0"},"description":"adelanto brian","trabajador":"bryan","precio":400,"date":{"$date":"2022-01-15T01:19:33.459Z"},"__v":0}
+{"_id":{"$oid":"61e376f7c69ab64f0147a1a2"},"description":"adelanto brian","trabajador":"yegor","precio":100,"date":{"$date":"2022-01-16T01:37:59.141Z"},"__v":0}
+{"_id":{"$oid":"61e377acc69ab64f0147a1a3"},"description":"pago a sandra ","trabajador":"yegor","precio":40,"date":{"$date":"2022-01-16T01:41:00.314Z"},"__v":0}
+{"_id":{"$oid":"61e613d2c69ab64f0147a1a6"},"description":"rapi","trabajador":"yegor","precio":50,"date":{"$date":"2022-01-18T01:11:46.877Z"},"__v":0}
+{"_id":{"$oid":"61e613e4c69ab64f0147a1a7"},"description":"pantallas beto","trabajador":"yegor","precio":50,"date":{"$date":"2022-01-18T01:12:04.997Z"},"__v":0}
+{"_id":{"$oid":"61e7616ac69ab64f0147a1ac"},"description":"rapi","trabajador":"yegor","precio":85,"date":{"$date":"2022-01-19T00:55:06.124Z"},"__v":0}
+{"_id":{"$oid":"61e76173c69ab64f0147a1ad"},"description":"almuerzo","trabajador":"yegor","precio":18,"date":{"$date":"2022-01-19T00:55:15.122Z"},"__v":0}
+{"_id":{"$oid":"61e8acacc69ab64f0147a1b0"},"description":"rapi","trabajador":"yegor","precio":85,"date":{"$date":"2022-01-20T00:28:28.333Z"},"__v":0}
+{"_id":{"$oid":"61e8afcec69ab64f0147a1b2"},"description":"cena chaufa","trabajador":"yegor","precio":20,"date":{"$date":"2022-01-20T00:41:50.396Z"},"__v":0}
+{"_id":{"$oid":"61ea039fc69ab64f0147a1b8"},"description":"rapi","trabajador":"yegor","precio":85,"date":{"$date":"2022-01-21T00:51:43.027Z"},"__v":0}
+{"_id":{"$oid":"61ea03a8c69ab64f0147a1b9"},"description":"almuerzo","trabajador":"yegor","precio":18,"date":{"$date":"2022-01-21T00:51:52.959Z"},"__v":0}
+{"_id":{"$oid":"61ea03bac69ab64f0147a1ba"},"description":"pantalla iphone6s+","trabajador":"yegor","precio":80,"date":{"$date":"2022-01-21T00:52:10.423Z"},"__v":0}
+{"_id":{"$oid":"61ea03d8c69ab64f0147a1bb"},"description":"pantalla a30s","trabajador":"yegor","precio":200,"date":{"$date":"2022-01-21T00:52:40.191Z"},"__v":0}
+{"_id":{"$oid":"61ea03f1c69ab64f0147a1bc"},"description":"zocalo a80","trabajador":"yegor","precio":45,"date":{"$date":"2022-01-21T00:53:05.438Z"},"__v":0}
+{"_id":{"$oid":"61ea088dc69ab64f0147a1bd"},"description":"chelas","trabajador":"yegor","precio":24,"date":{"$date":"2022-01-21T01:12:45.574Z"},"__v":0}
+{"_id":{"$oid":"61eb5a20c69ab64f0147a1c3"},"description":"rapi","trabajador":"yegor","precio":85,"date":{"$date":"2022-01-22T01:13:04.497Z"},"__v":0}
+{"_id":{"$oid":"61eb5a3bc69ab64f0147a1c4"},"description":"pantalla iphone 6","trabajador":"yegor","precio":60,"date":{"$date":"2022-01-22T01:13:31.133Z"},"__v":0}
+{"_id":{"$oid":"61eb5a43c69ab64f0147a1c5"},"description":"almuerzo","trabajador":"yegor","precio":12,"date":{"$date":"2022-01-22T01:13:39.654Z"},"__v":0}
+{"_id":{"$oid":"61f895b5c69ab64f0147a1c6"},"description":"adelanto","trabajador":"oscar","precio":130,"date":{"$date":"2022-02-01T02:06:45.636Z"},"__v":0}
+{"_id":{"$oid":"61ff1c48c69ab64f0147a1c7"},"description":"oscar adelanto ","trabajador":"yegor","precio":80,"date":{"$date":"2022-02-06T00:54:32.09Z"},"__v":0}
+{"_id":{"$oid":"61ff1c4dc69ab64f0147a1c8"},"description":"ken adelanto","trabajador":"yegor","precio":20,"date":{"$date":"2022-02-06T00:54:37.917Z"},"__v":0}
+{"_id":{"$oid":"621ac60cc69ab64f0147a1c9"},"description":"adelanato oscar","trabajador":"oscar","precio":100,"date":{"$date":"2022-02-27T00:30:04.888Z"},"__v":0}
+{"_id":{"$oid":"6282ed8d5e5176b18742b473"},"description":"almuerzo","trabajador":"yegor","precio":18,"date":{"$date":"2022-05-17T00:34:21.171Z"},"__v":0}
+{"_id":{"$oid":"6282efec5e5176b18742b476"},"description":"rapidiario","trabajador":"yegor","precio":40,"date":{"$date":"2022-05-17T00:44:28.402Z"},"__v":0}
+{"_id":{"$oid":"6282f00b5e5176b18742b477"},"description":"pila multimetro","trabajador":"yegor","precio":30,"date":{"$date":"2022-05-17T00:44:59.529Z"},"__v":0}
+{"_id":{"$oid":"6282f16f5e5176b18742b478"},"description":"yegor pago iphone 12","trabajador":"yegor","precio":200,"date":{"$date":"2022-05-17T00:50:55.446Z"},"__v":0}
+{"_id":{"$oid":"62844a125e5176b18742b482"},"description":"rapidiario","trabajador":"yegor","precio":45,"date":{"$date":"2022-05-18T01:21:22.15Z"},"__v":0}
+{"_id":{"$oid":"62844a495e5176b18742b483"},"description":"cobro(bateria)","trabajador":"yegor","precio":80,"date":{"$date":"2022-05-18T01:22:17.689Z"},"__v":0}
+{"_id":{"$oid":"628530a35e5176b18742b484"},"description":"Janeth(adelanto)","trabajador":"yegor","precio":85,"date":{"$date":"2022-05-18T17:45:07.113Z"},"__v":0}
+{"_id":{"$oid":"628549815e5176b18742b48a"},"description":"almuerzo ","trabajador":"yegor","precio":25,"date":{"$date":"2022-05-18T19:31:13.806Z"},"__v":0}
+{"_id":{"$oid":"62856e155e5176b18742b48c"},"description":"pasaje","trabajador":"yegor","precio":15,"date":{"$date":"2022-05-18T22:07:17.466Z"},"__v":0}
+{"_id":{"$oid":"62857fcb5e5176b18742b490"},"description":"rapidiario","trabajador":"yegor","precio":40,"date":{"$date":"2022-05-18T23:22:51.609Z"},"__v":0}
+{"_id":{"$oid":"628598365e5176b18742b492"},"description":"cenasa","trabajador":"yegor","precio":10,"date":{"$date":"2022-05-19T01:07:02.727Z"},"__v":0}
+{"_id":{"$oid":"62859b415e5176b18742b494"},"description":"deuda( yegor)","trabajador":"yegor","precio":400,"date":{"$date":"2022-05-19T01:20:01.609Z"},"__v":0}
+{"_id":{"$oid":"6286dbc75e5176b18742b496"},"description":"almuerzo","trabajador":"yegor","precio":18,"date":{"$date":"2022-05-20T00:07:35.035Z"},"__v":0}
+{"_id":{"$oid":"6286dbd15e5176b18742b497"},"description":"linasa","trabajador":"yegor","precio":4,"date":{"$date":"2022-05-20T00:07:45.46Z"},"__v":0}
+{"_id":{"$oid":"6286dbd75e5176b18742b498"},"description":"agua","trabajador":"yegor","precio":3,"date":{"$date":"2022-05-20T00:07:51.79Z"},"__v":0}
+{"_id":{"$oid":"6287e65936f4a8047b0a5b44"},"description":"almuerzo","trabajador":"yegor","precio":25,"date":{"$date":"2022-05-20T19:04:57.811Z"},"__v":0}
+{"_id":{"$oid":"6288436d36f4a8047b0a5b4b"},"description":"cena","trabajador":"yegor","precio":13,"date":{"$date":"2022-05-21T01:42:05.4Z"},"__v":0}
+{"_id":{"$oid":"62891af6ca7cbc11ba67f645"},"description":"bateria ","trabajador":"yegor","precio":70,"date":{"$date":"2022-05-21T17:01:42.955Z"},"__v":0}
+{"_id":{"$oid":"628976aaca7cbc11ba67f649"},"description":"yegor ","trabajador":"yegor","precio":200,"date":{"$date":"2022-05-21T23:32:58.968Z"},"__v":0}
